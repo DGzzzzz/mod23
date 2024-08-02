@@ -15,13 +15,13 @@ public class ContratoServiceTest {
         Assert.assertEquals("Erro ao salvar", "Sucesso", retornoSalvar);
 
         String retornoExcluir = service.excluir();
-        Assert.assertEquals("Erro ao excluir", "Excluido", retornoExcluir);
+        Assert.assertEquals("Excluido", retornoExcluir);
 
         String retornoBuscar = service.buscar();
-        Assert.assertEquals("Erro ao buscar", "Buscado", retornoBuscar);
+        Assert.assertEquals( "Buscado", retornoBuscar);
 
         String retornoEditar = service.editar();
-        Assert.assertEquals("Erro ao editar", "Editado", retornoEditar);
+        Assert.assertEquals("Editado", retornoEditar);
     }
     
     @Test(expected = UnsupportedOperationException.class)

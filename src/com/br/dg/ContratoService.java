@@ -14,16 +14,19 @@ public class ContratoService implements IContratoService {
 
     @Override
     public String excluir() {
+        contratoDao.excluir();
         return "Excluido";
     }
 
     @Override
     public String buscar() {
+        contratoDao.buscar();
         return "Buscado";
     }
 
     @Override
     public String editar() {
+        contratoDao.editar();
         return "Editado";
     }
 }
